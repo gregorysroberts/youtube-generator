@@ -1,36 +1,35 @@
 <div class="header">
-  <ul class="nav nav-pills pull-right">
-    <li class="active"><a ng-href="#">Home</a></li>
-    <li><a ng-href="#">About</a></li>
-    <li><a ng-href="#">Contact</a></li>
-  </ul>
-  <h3 class="text-muted">youtube generator</h3>
+  <h3 class="text-center">Watch Greg's Favorite YouTube Videos</h3>
 </div>
 
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
+<div class="jumbotron" ng-controller="MainCtrl">
   <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
+    <img src="https://scontent-b.xx.fbcdn.net/hphotos-frc3/t1/285553_10150253426661345_1287699_n.jpg" alt="Greg" class="img-circle img-main"><br>
+    Generate A Random Video
   </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!</a></p>
+  <p><a class="btn btn-lg btn-success" ng-href="#">Random Video</a></p>
 </div>
 
 <div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
+  <h4>What is this?</h4>
   <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
+    Greg is sick of not being able to remember his favorite funny youtube clips whenever someone asks, "Anybody got any funny youtube videos?". This project hopes to solve that problem.
   </p>
 
-  <h4>Angular</h4>
+  <h4>Submit potential videos</h4>
   <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
+    If you think there is a funny youtube video that Greg should put on this site feel free to submit it using the URL in the form below. No guarantees it will make the cut.
   </p>
-
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
 </div>
 
+<form role="form">
+  <div class="form-group">
+    <label for="submitVideo">Suggest a Video</label>
+    <input type="url" class="form-control" id="submitVideo" placeholder="Copy and paste a url from YouTube">
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
 <div class="footer">
-  <p>♥ from the Yeoman team</p>
+  <p>Hope you enjoy</p>
 </div>

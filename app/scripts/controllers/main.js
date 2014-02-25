@@ -2,9 +2,7 @@
 
 angular.module('youtubeGeneratorApp')
   .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+    $scope.onclick(function (){
+    	console.log("clicked the button");
+    })
   });
